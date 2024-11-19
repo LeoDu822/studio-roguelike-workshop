@@ -55,7 +55,7 @@ public class MapGenerator : MonoBehaviour
             // code here
             if (!map.Get(current.x, current.y).IsEmpty)
             {
-                continue
+                continue;
             }
 
             List<Vector2Int> selectedNeighbors = new();
