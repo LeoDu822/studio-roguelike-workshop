@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f9367a47a256dfefb098be2c45d7298, type: 3}
-  m_Name: BossEnemyPool
+  m_Script: {fileID: 11500000, guid: 4d60abd82ef08804f90b5fd9dbc1af3f, type: 3}
+  m_Name: Item Room Pool
   m_EditorClassIdentifier: 
-  EnemyPrefabs:
-  - {fileID: 8427128814846987572, guid: fdf9d3d097dbf156fa9897924a6b87aa, type: 3}
+  Items: []

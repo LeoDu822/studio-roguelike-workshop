@@ -52,30 +52,42 @@ public class MapGenerator : MonoBehaviour
             // get the unexplored room
             Vector2Int current = stack.Pop();
 
-            // code here
+            // if the room is not empty, ignotre it
             if (!map.Get(current.x, current.y).IsEmpty)
             {
                 continue;
             }
 
+            // Save neighboring positions:
             List<Vector2Int> selectedNeighbors = new();
 
+            // shuffle the neighbor offsets
             ShuffleList(neighborOffsets);
 
             foreach (Vector2Int offset in neighborOffsets)
             {
                 Vector2Int neighbor = current + offset;
 
-                if (!map.InBounds(neighbor.x, neighbor.y) || !map.Get(neighbor.x, neighbor.y).IsEmpty)
+                // if the neighbor is not in bounds or
+                // is not empty, disregard it
+                if (
+                    !map.InBounds(neighbor.x, neighbor.y)
+                    || !map.Get(neighbor.x, neighbor.y).IsEmpty
+                )
                 {
                     continue;
                 }
+
+                // count the number of filled rooms are surrounding the neighbor
                 int neighboringRooms = 0;
                 foreach (Vector2Int neighborOffset in neighborOffsets)
                 {
                     Vector2Int neighborNeighbor = neighbor + neighborOffset;
 
-                    if (map.InBounds(neighborNeighbor.x, neighborNeighbor.y) && !map.Get(neighborNeighbor.x, neighborNeighbor.y).IsEmpty)
+                    if (
+                        map.InBounds(neighborNeighbor.x, neighborNeighbor.y)
+                        && !map.Get(neighborNeighbor.x, neighborNeighbor.y).IsEmpty
+                    )
                     {
                         neighboringRooms++;
                     }
@@ -90,7 +102,7 @@ public class MapGenerator : MonoBehaviour
             // of the available neighbors,
             // add a random number of them to the stack (at least 1)
             int neighborsToAdd = Random.Range(1, selectedNeighbors.Count + 1);
-            for (int i = 0; i < neighborsToAdd; i++)
+            for(int i = 0; i < neighborsToAdd; i++)
             {
                 stack.Push(selectedNeighbors[i]);
             }
@@ -129,8 +141,6 @@ public class MapGenerator : MonoBehaviour
             map.Get(current.x, current.y).Type = roomType;
             numRooms++;
         }
-        
-
         return map;
     }
 }
