@@ -99,7 +99,7 @@ PrefabInstance:
       addedObject: {fileID: 6648531370532882562}
     - targetCorrespondingSourceObject: {fileID: 6539112502260803746, guid: 5b91ef4a051f2993f87747b43c4ef2b2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1568161083542266156}
+      addedObject: {fileID: 2082280844336818446}
   m_SourcePrefab: {fileID: 100100000, guid: 5b91ef4a051f2993f87747b43c4ef2b2, type: 3}
 --- !u!1 &8427128814846987572 stripped
 GameObject:
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 5
   lookAhead: 1
---- !u!114 &1568161083542266156
+--- !u!114 &2082280844336818446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8427128814846987572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53a7542a3a39b8343b4697322035aedb, type: 3}
+  m_Script: {fileID: 11500000, guid: 904a2ad4506553a469cbb81dce93df69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ProjectileShootEvent:

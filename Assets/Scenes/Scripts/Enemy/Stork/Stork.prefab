@@ -99,7 +99,7 @@ PrefabInstance:
       addedObject: {fileID: 1991509706424050124}
     - targetCorrespondingSourceObject: {fileID: 6539112502260803746, guid: 5b91ef4a051f2993f87747b43c4ef2b2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 309549981257812903}
+      addedObject: {fileID: 4716872056005467109}
   m_SourcePrefab: {fileID: 100100000, guid: 5b91ef4a051f2993f87747b43c4ef2b2, type: 3}
 --- !u!1 &5048110942589723072 stripped
 GameObject:
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backOffRange: 8
---- !u!114 &309549981257812903
+--- !u!114 &4716872056005467109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5048110942589723072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53a7542a3a39b8343b4697322035aedb, type: 3}
+  m_Script: {fileID: 11500000, guid: 904a2ad4506553a469cbb81dce93df69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ProjectileShootEvent:
@@ -137,6 +137,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 144368321731950493, guid: c57b97053e40db54fac992d6555686b3, type: 3}
   ShootingSpeed: 5
   ShootingCooldown: 1
-  Damage: 0.3333
+  Damage: 1
   ProjectileLifetime: 5
   ProjectileScale: 1
